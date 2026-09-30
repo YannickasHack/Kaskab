@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KASKAB — Bibliothèque Créative · Photo · Design · Digital</title>
+  <meta name="description" content="KASKAB : bibliothèque créative en photographie, design, communication digitale et informatique.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">KASKAB</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===== CURSEUR CUSTOM ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===== PROGRESS BAR ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#accueil" class="logo" data-cursor="hover">
+        <span class="logo-mark">K</span>
+        <span class="logo-text">KASKAB</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#accueil" class="nav-link active" data-cursor="hover">Accueil</a></li>
+          <li><a href="#services" class="nav-link" data-cursor="hover">Services</a></li>
+          <li><a href="#portfolio" class="nav-link" data-cursor="hover">Portfolio</a></li>
+          <li><a href="#apropos" class="nav-link" data-cursor="hover">À propos</a></li>
+          <li><a href="#contact" class="btn-nav" data-cursor="hover">Démarrer un projet</a></li>
+        </ul>
+      </nav>
+      <div class="burger" id="burger" data-cursor="hover">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge" data-animate="fade-up">
+          <span class="pulse-dot"></span>
+          Bibliothèque créative · Édition 2025
+        </div>
+        <h1 class="hero-title">
+          <span class="line" data-animate="fade-up">Là où</span>
+          <span class="line" data-animate="fade-up" data-delay="100">
+            <span class="word-rotate" id="wordRotate">l'image</span>
+          </span>
+          <span class="line" data-animate="fade-up" data-delay="200">
+            devient <span class="accent-grad">vision.</span>
+          </span>
+        </h1>
+        <p class="hero-desc" data-animate="fade-up" data-delay="300">
+          KASKAB rassemble photographies, identités visuelles, stratégies digitales et projets informatiques — une bibliothèque où chaque création raconte une histoire.
+        </p>
+        <div class="hero-actions" data-animate="fade-up" data-delay="400">
+          <a href="#portfolio" class="btn btn-primary magnetic" data-cursor="hover">
+            <span>Explorer le portfolio</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost" data-cursor="hover">
+            Nous contacter
+          </a>
+        </div>
+
+        <div class="hero-stats" data-animate="fade-up" data-delay="500">
+          <div class="stat">
+            <span class="stat-num" data-count="150">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projets exposés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="12">0</span>
+            <span class="stat-label">Disciplines</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="98">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Clients satisfaits</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-animate="fade-in" data-delay="200">
+        <div class="visual-frame">
+          <div class="frame-img frame-1">
+            <img src="https://images.unsplash.com/photo-1552168324-d612d77725e3?w=800" alt="Photographie">
+            <span class="frame-tag">📸 Photo</span>
+          </div>
+          <div class="frame-img frame-2">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800" alt="Design">
+            <span class="frame-tag">🎨 Design</span>
+          </div>
+          <div class="frame-img frame-3">
+            <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800" alt="Digital">
+            <span class="frame-tag">📱 Digital</span>
+          </div>
+          <div class="frame-badge">
+            <span class="badge-num">K</span>
+            <span class="badge-text">Créations<br>signées</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Photographie ✦ Design ✦ Communication Digitale ✦ Informatique ✦ Photographie ✦ Design ✦ Communication Digitale ✦ Informatique ✦</span>
+      <span>Photographie ✦ Design ✦ Communication Digitale ✦ Informatique ✦ Photographie ✦ Design ✦ Communication Digitale ✦ Informatique ✦</span>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-animate="fade-up">✦ Nos domaines</span>
+        <h2 data-animate="fade-up" data-delay="100">
+          Quatre univers,<br>une seule <span class="accent-grad">signature.</span>
+        </h2>
+        <p class="section-desc" data-animate="fade-up" data-delay="200">
+          Chaque discipline est explorée avec la même exigence : capturer l'émotion, structurer l'idée, transmettre le message.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card tilt" data-tilt data-animate="fade-up">
+          <div class="card-glow"></div>
+          <div class="service-top">
+            <div class="service-icon">📸</div>
+            <span class="service-num">01</span>
+          </div>
+          <h3>Photographie</h3>
+          <p>Portraits, paysages, événements et séries artistiques capturés avec une sensibilité unique.</p>
+          <div class="service-footer">
+            <span class="tag">Studio</span>
+            <span class="tag">Extérieur</span>
+            <span class="tag">Événement</span>
+          </div>
+        </article>
+
+        <article class="service-card tilt" data-tilt data-animate="fade-up" data-delay="100">
+          <div class="card-glow"></div>
+          <div class="service-top">
+            <div class="service-icon">🎨</div>
+            <span class="service-num">02</span>
+          </div>
+          <h3>Design</h3>
+          <p>Identités visuelles, UI/UX, affiches et systèmes graphiques pensés pour marquer les esprits.</p>
+          <div class="service-footer">
+            <span class="tag">Branding</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Print</span>
+          </div>
+        </article>
+
+        <article class="service-card tilt" data-tilt data-animate="fade-up" data-delay="200">
+          <div class="card-glow"></div>
+          <div class="service-top">
+            <div class="service-icon">📱</div>
+            <span class="service-num">03</span>
+          </div>
+          <h3>Communication Digitale</h3>
+          <p>Stratégies social media, campagnes, storytelling et contenus qui engagent vraiment.</p>
+          <div class="service-footer">
+            <span class="tag">Social</span>
+            <span class="tag">Stratégie</span>
+            <span class="tag">Contenu</span>
+          </div>
+        </article>
+
+        <article class="service-card tilt" data-tilt data-animate="fade-up" data-delay="300">
+          <div class="card-glow"></div>
+          <div class="service-top">
+            <div class="service-icon">💻</div>
+            <span class="service-num">04</span>
+          </div>
+          <h3>Informatique & Autres</h3>
+          <p>Développement web, applications, projets techniques et innovations numériques.</p>
+          <div class="service-footer">
+            <span class="tag">Web</span>
+            <span class="tag">Apps</span>
+            <span class="tag">Tech</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-animate="fade-up">✦ Réalisations</span>
+        <h2 data-animate="fade-up" data-delay="100">
+          Notre <span class="accent-grad">bibliothèque</span> visuelle
+        </h2>
+      </div>
+
+      <div class="filters" data-animate="fade-up" data-delay="200">
+        <button class="filter-btn active" data-filter="all" data-cursor="hover">Tout</button>
+        <button class="filter-btn" data-filter="photo" data-cursor="hover">Photographie</button>
+        <button class="filter-btn" data-filter="design" data-cursor="hover">Design</button>
+        <button class="filter-btn" data-filter="com" data-cursor="hover">Communication</button>
+        <button class="filter-btn" data-filter="info" data-cursor="hover">Informatique</button>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <div class="gallery-item" data-category="photo" data-animate="fade-up">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="Portrait Studio">
+          <div class="overlay">
+            <span class="overlay-cat">Photographie</span>
+            <h4>Portrait Studio</h4>
+            <span class="overlay-cta">Voir le projet →</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="design" data-animate="fade-up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800" alt="Identité Visuelle">
+          <div class="overlay">
+            <span class="overlay-cat">Design</span>
+            <h4>Identité Visuelle</h4>
+            <span class="overlay-cta">Voir le projet →</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="com" data-animate="fade-up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800" alt="Campagne Social">
+          <div class="overlay">
+            <span class="overlay-cat">Communication</span>
+            <h4>Campagne Social</h4>
+            <span class="overlay-cta">Voir le projet →</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="info" data-animate="fade-up" data-delay="300">
+          <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800" alt="App Web">
+          <div class="overlay">
+            <span class="overlay-cat">Informatique</span>
+            <h4>App Web Kaskab</h4>
+            <span class="overlay-cta">Voir le projet →</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="photo" data-animate="fade-up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Paysage">
+          <div class="overlay">
+            <span class="overlay-cat">Photographie</span>
+            <h4>Paysage Nature</h4>
+            <span class="overlay-cta">Voir le projet →</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="design" data-animate="fade-up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800" alt="UI Mobile">
+          <div class="overlay">
+            <span class="overlay-cat">Design</span>
+            <h4>UI Mobile App</h4>
+            <span class="overlay-cta">Voir le projet →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-cta" data-animate="fade-up">
+        <a href="#contact" class="btn btn-outline" data-cursor="hover">Voir toute la collection →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" data-cursor="hover">✕</button>
+    <img src="" alt="" id="lightboxImg">
+    <div class="lightbox-info">
+      <h4 id="lightboxTitle"></h4>
+      <span id="lightboxCat"></span>
+    </div>
+  </div>
+
+  <!-- ===== À PROPOS ===== -->
+  <section class="about" id="apropos">
+    <div class="container about-grid">
+      <div class="about-visual" data-animate="fade-in">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="Équipe Kaskab">
+        </div>
+        <div class="about-img-small">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600" alt="Créativité">
+        </div>
+        <div class="about-badge">
+          <span class="badge-num">+5</span>
+          <span class="badge-text">années<br>d'expérience</span>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-tag" data-animate="fade-up">✦ À propos de KASKAB</span>
+        <h2 data-animate="fade-up" data-delay="100">
+          Une vision,<br>une <span class="accent-grad">passion.</span>
+        </h2>
+        <p data-animate="fade-up" data-delay="200">
+          KASKAB est un espace numérique dédié à la valorisation des créations visuelles et techniques. Nous rassemblons des œuvres en photographie, design, communication digitale et informatique — pour inspirer, archiver et connecter les talents.
+        </p>
+
+        <ul class="about-list" data-animate="fade-up" data-delay="300">
+          <li>
+            <span class="check">✓</span>
+            <div><strong>Archivage moderne</strong><br><small>Une bibliothèque organisée et accessible.</small></div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div><strong>Vitrine créative</strong><br><small>Un espace pour créateurs et développeurs.</small></div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div><strong>Collaboration</strong><br><small>Inspiration et partenariats sur mesure.</small></div>
+          </li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary magnetic" data-cursor="hover" data-animate="fade-up" data-delay="400">
+          <span>Travaillons ensemble</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-box" data-animate="zoom-in">
+        <div class="cta-content">
+          <h2>Prêt à donner vie<br>à votre <span class="accent-grad">projet</span> ?</h2>
+          <p>Discutons de votre vision et construisons quelque chose de mémorable.</p>
+          <a href="#contact" class="btn btn-light magnetic" data-cursor="hover">
+            <span>Démarrer maintenant</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="cta-decoration">
+          <div class="circle c1"></div>
+          <div class="circle c2"></div>
+          <div class="circle c3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fade-up">
+          <span class="section-tag light">✦ Contact</span>
+          <h2>Parlons de votre <span class="accent-light">projet.</span></h2>
+          <p>Une idée, une collaboration, une question ? Notre équipe KASKAB vous répond sous 24h.</p>
+
+          <div class="contact-methods">
+            <a href="mailto:hello@kaskab.com" class="contact-method" data-cursor="hover">
+              <div class="method-icon">✉</div>
+              <div>
+                <small>Email</small>
+                <strong>hello@kaskab.com</strong>
+              </div>
+            </a>
+            <a href="tel:+243000000000" class="contact-method" data-cursor="hover">
+              <div class="method-icon">☎</div>
+              <div>
+                <small>Téléphone</small>
+                <strong>+243 000 000 000</strong>
+              </div>
+            </a>
+            <div class="contact-method">
+              <div class="method-icon">📍</div>
+              <div>
+                <small>Localisation</small>
+                <strong>Kinshasa, RDC</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" data-animate="fade-up" data-delay="200">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nom complet</label>
+              <input type="text" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="vous@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Sujet</label>
+            <input type="text" placeholder="De quoi parle-t-on ?">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Décrivez votre projet..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary magnetic" data-cursor="hover">
+            <span>Envoyer le message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo light" data-cursor="hover">
+            <span class="logo-mark">K</span>
+            <span class="logo-text">KASKAB</span>
+          </a>
+          <p>Bibliothèque créative · Photo · Design · Digital · Informatique.</p>
+          <div class="socials">
+            <a href="#" data-cursor="hover">IG</a>
+            <a href="#" data-cursor="hover">FB</a>
+            <a href="#" data-cursor="hover">TW</a>
+            <a href="#" data-cursor="hover">IN</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="#accueil">Accueil</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#apropos">À propos</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="#">Photographie</a>
+          <a href="#">Design</a>
+          <a href="#">Communication</a>
+          <a href="#">Informatique</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="mailto:hello@kaskab.com">hello@kaskab.com</a>
+          <a href="tel:+243000000000">+243 000 000 000</a>
+          <a href="#">Kinshasa, RDC</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 KASKAB. Tous droits réservés.</p>
+        <p>Conçu avec <span class="accent">♥</span> à Kinshasa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
